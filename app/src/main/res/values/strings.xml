@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Roll Dice</string>
+    <string name="results">Results</string>
+    <string name="dice_4">4</string>
+    <string name="dice_6">6</string>
+    <string name="dice_8">8</string>
+    <string name="dice_10">10</string>
+    <string name="dice_12">12</string>
+    <string name="dice_20">20</string>
+    <string name="roll_twice">Roll twice</string>
+    <string name="roll">Roll!</string>
+    <string name="true_10">True 10 sided die</string>
+    <string name="roll_it">Roll it!!!</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/results"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/roll_it"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtTitle" />
+
+        <RadioGroup
+            android:id="@+id/rdgDice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtResult"
+            android:checkedButton="@id/rbDice4">
+
+            <RadioButton
+                android:id="@+id/rbDice4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dice_4" />
+
+            <RadioButton
+                android:id="@+id/rbDice6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dice_6" />
+
+            <RadioButton
+                android:id="@+id/rbDice8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dice_8" />
+
+            <RadioButton
+                android:id="@+id/rbDice10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dice_10" />
+
+            <CheckBox
+                android:id="@+id/chkTrue10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/true_10"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rbDice12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dice_12" />
+
+            <RadioButton
+                android:id="@+id/rbDice20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dice_20" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/chkRollTwice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/roll_twice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rdgDice" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/roll"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/chkRollTwice"
+            android:onClick="onRollButtonClick"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
