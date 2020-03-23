@@ -42,13 +42,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="45dp"
             android:layout_marginEnd="30dp"
+            android:checkedButton="@id/rbDice4"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txtResult"
-            android:checkedButton="@id/rbDice4">
+            app:layout_constraintTop_toTopOf="@id/txtResult">
+
+            <TextView
+                android:id="@+id/txtSides"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/num_sides"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/rbDice4"

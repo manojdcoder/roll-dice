@@ -11,4 +11,5 @@
     <string name="roll">Roll!</string>
     <string name="true_10">True 10 sided die</string>
     <string name="roll_it">Roll it!!!</string>
+    <string name="num_sides">Number of sides?</string>
 </resources>
